@@ -29,7 +29,7 @@ def close_db(error):
 def hbnb():
     """
     Defines a route for the web application.
-    When a user visits the ‘/0-hbnb/’ URL path, the hbnb function is called.
+    When a user visits the ‘/1-hbnb/’ URL path, the hbnb function is called.
     """
     states = storage.all(State).values()
     states = sorted(states, key=lambda k: k.name)
@@ -53,6 +53,6 @@ def hbnb():
 if __name__ == "__main__":
     """
     If this script is run directly (not imported as a module),
-    it starts the Flask development server on the host ‘0.0.0.0’ and port 5001.
+    it starts the Flask development server on the host ‘0.0.0.0’ and port 5000.
     """
     app.run(host='0.0.0.0', port=5000)
